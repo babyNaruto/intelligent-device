@@ -1,0 +1,15 @@
+[Unit]
+
+Description=Files Service
+
+After=multi-user.target
+
+[Service]
+
+Type=idle
+
+ExecStart=/usr/local/python3.7.5/bin/python3 /home/HwHiAiUser/mqtt/main.py
+
+[Install]
+
+WantedBy=multi-user.target
